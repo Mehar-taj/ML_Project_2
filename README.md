@@ -1,7 +1,7 @@
 # 🎗️ Breast Cancer Prediction using Machine Learning
 
 <p align="center">
-  <img src="assets/banner.png" alt="Breast Cancer Prediction Banner" width="100%">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:6A11CB,100:2575FC&height=250&section=header&text=Spam%20Mail%20Detection%20using%20ML%20and%20NLP&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=40" />
 </p>
 
 <p align="center">
