@@ -1,7 +1,7 @@
 # 🎗️ Breast Cancer Prediction using Machine Learning
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF4B6E,100:8E44AD&height=250&section=header&text=Breast%20Cancer%20Prediction%20using%20Machine%20Learning&fontSize=35&fontColor=ffffff&animation=fadeIn&fontAlignY=40" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF4B6E,100:8E44AD&height=250&section=header&text=Breast%20Cancer%20Prediction&fontSize=35&fontColor=ffffff&animation=fadeIn&fontAlignY=40" />
 </p>
 
 <p align="center">
