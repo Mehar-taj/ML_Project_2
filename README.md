@@ -1,7 +1,7 @@
 # 🎗️ Breast Cancer Prediction using Machine Learning
 
 <p align="center">
-  <img src="banner.png" alt="Breast Cancer Prediction Banner" width="100%">
+  <img src="assets/banner.png" alt="Breast Cancer Prediction Banner" width="100%">
 </p>
 
 <p align="center">
@@ -15,22 +15,22 @@
 
 ---
 
-## 📖 Overview
+## 📖 Project Overview
 
-As part of my ongoing journey in **Artificial Intelligence, Machine Learning, and Generative AI**, this project focuses on developing a **Breast Cancer Prediction System** using Machine Learning techniques. The objective is to classify breast tumors as **Benign (Non-Cancerous)** or **Malignant (Cancerous)** based on diagnostic measurements from the Breast Cancer Wisconsin Dataset.
+This project develops a **Breast Cancer Prediction System** using Machine Learning techniques to classify breast tumors as **Benign (Non-Cancerous)** or **Malignant (Cancerous)**. The model is trained using the Breast Cancer Wisconsin Dataset, which contains diagnostic measurements computed from digitized images of breast mass cell nuclei.
 
-This project demonstrates the complete machine learning workflow, including data preprocessing, exploratory data analysis, model training, evaluation, and deployment of a predictive system. By applying Logistic Regression, the model learns patterns within medical data and provides accurate predictions that can support healthcare decision-making.
+As part of my continuous journey in **Artificial Intelligence, Machine Learning, Data Science, and Generative AI**, this project demonstrates the complete machine learning workflow, including data preprocessing, feature selection, model training, evaluation, and prediction.
 
 ---
 
 ## 🎯 Project Objectives
 
-* Understand and explore real-world healthcare data.
+* Analyze and understand a real-world healthcare dataset.
 * Perform data cleaning and preprocessing.
 * Build a binary classification model using Logistic Regression.
 * Evaluate model performance using accuracy metrics.
-* Develop a predictive system for new patient data.
-* Strengthen practical machine learning skills as part of my AI and Generative AI learning path.
+* Develop a predictive system for classifying breast tumors.
+* Strengthen practical machine learning skills through hands-on implementation.
 
 ---
 
@@ -38,18 +38,16 @@ This project demonstrates the complete machine learning workflow, including data
 
 **Dataset:** Breast Cancer Wisconsin Dataset
 
-**Records:** 569
+**Number of Records:** 569
 
-**Features:** 30 Diagnostic Measurements
+**Number of Features:** 30
 
-**Target Variable:**
+**Target Variable:** Diagnosis
 
-| Diagnosis | Meaning                |
-| --------- | ---------------------- |
-| B         | Benign (Non-Cancerous) |
-| M         | Malignant (Cancerous)  |
-
-The dataset contains measurements computed from digitized images of breast mass cell nuclei, making it a popular benchmark dataset for binary classification tasks.
+| Label | Meaning                |
+| ----- | ---------------------- |
+| B     | Benign (Non-Cancerous) |
+| M     | Malignant (Cancerous)  |
 
 ---
 
@@ -64,66 +62,79 @@ The dataset contains measurements computed from digitized images of breast mass 
 
 ---
 
-## 🔄 Machine Learning Workflow
+## 🔄 Project Workflow
 
-### 1️⃣ Data Collection
+### 1. Data Collection
 
-Loaded the Breast Cancer Wisconsin Dataset.
+* Loaded the Breast Cancer Wisconsin Dataset.
 
-### 2️⃣ Data Preprocessing
+### 2. Data Exploration
 
-* Removed unnecessary columns.
-* Handled missing values.
-* Converted categorical labels into numerical values.
+* Examined dataset structure.
+* Checked data types.
+* Identified missing values.
+* Reviewed feature statistics.
 
-### 3️⃣ Feature Selection
+### 3. Data Preprocessing
 
-Separated input features and target labels.
+* Removed unnecessary columns (`id`, `Unnamed: 32`).
+* Converted diagnosis labels:
 
-### 4️⃣ Train-Test Split
+  * Malignant (M) → 1
+  * Benign (B) → 0
 
-Split the dataset into training and testing datasets.
+### 4. Feature Selection
 
-### 5️⃣ Model Training
+* Selected 30 diagnostic measurements as input features.
+* Selected diagnosis as the target variable.
 
-Trained a Logistic Regression classifier on the training data.
+### 5. Train-Test Split
 
-### 6️⃣ Model Evaluation
+* Split data into training and testing datasets.
+* Training Data: 80%
+* Testing Data: 20%
 
-Evaluated performance using training and testing accuracy.
+### 6. Model Training
 
-### 7️⃣ Prediction System
+* Trained a Logistic Regression classifier using the training dataset.
 
-Built a predictive system capable of classifying new patient data.
+### 7. Model Evaluation
+
+* Calculated training accuracy.
+* Calculated testing accuracy.
+
+### 8. Prediction System
+
+* Built a predictive system that accepts new patient measurements and predicts tumor diagnosis.
 
 ---
 
-## 🤖 Model Used
+## 🤖 Machine Learning Model
 
 ### Logistic Regression
 
-Logistic Regression is a supervised machine learning algorithm used for binary classification problems. It estimates the probability of a data point belonging to a specific class and is widely used because of its simplicity, interpretability, and effectiveness.
+Logistic Regression is a supervised machine learning algorithm commonly used for binary classification problems. It predicts the probability that a given input belongs to a particular class and is widely used due to its simplicity, interpretability, and effectiveness.
 
 ---
 
-## 📊 Results
+## 📊 Model Performance
 
 | Metric            | Score  |
 | ----------------- | ------ |
 | Training Accuracy | 93.63% |
 | Testing Accuracy  | 93.86% |
 
-The model achieved strong performance on both training and testing datasets, indicating good generalization capability.
+The model demonstrates strong performance and generalization capability on unseen data.
 
 ---
 
 ## 🎗️ Sample Prediction
 
-### Input:
+### Input
 
-Patient diagnostic measurements (30 features)
+Diagnostic measurements from a patient containing 30 features.
 
-### Output:
+### Output
 
 ```python
 Prediction: Malignant Tumor (Cancerous)
@@ -146,45 +157,46 @@ Breast-Cancer-Prediction/
 ├── Breast_cancer_data.csv
 ├── README.md
 ├── requirements.txt
-└── banner.png
+└── .gitignore
 ```
 
 ---
 
 ## 🚀 Future Improvements
 
-* Apply Feature Scaling using StandardScaler
-* Compare Multiple Classification Algorithms
-* Add Confusion Matrix and Classification Report
-* Build an Interactive Streamlit Application
-* Deploy the Model for Public Use
+* Apply Feature Scaling using StandardScaler.
+* Add Confusion Matrix Visualization.
+* Generate Classification Report.
+* Compare Multiple Machine Learning Algorithms.
+* Build a Streamlit Web Application.
+* Deploy the model for real-world use.
 
 ---
 
 ## 📚 Key Learnings
 
-Through this project, I gained hands-on experience in:
+Through this project, I gained practical experience in:
 
 * Data Cleaning and Preprocessing
 * Exploratory Data Analysis (EDA)
-* Binary Classification
+* Feature Selection
 * Logistic Regression
 * Model Evaluation
-* Building Predictive Systems
-* Applying Machine Learning to Healthcare Data
+* Predictive System Development
+* Healthcare Data Analysis
 
 ---
 
-## 🌱 My AI & Generative AI Journey
+## 🌱 Learning Journey
 
-This project is part of my continuous learning journey in:
+This project is part of my ongoing learning journey in:
 
 * Artificial Intelligence (AI)
 * Machine Learning (ML)
 * Data Science
 * Generative AI
 
-Each project helps me strengthen my understanding of real-world problem-solving using data and intelligent systems while building a strong foundation for advanced AI applications.
+Each project helps me strengthen my understanding of real-world problem solving using data-driven approaches and intelligent systems.
 
 ---
 
@@ -194,4 +206,10 @@ Each project helps me strengthen my understanding of real-world problem-solving 
 
 Aspiring Data Scientist | Machine Learning Enthusiast | AI & Generative AI Learner
 
-⭐ If you found this project interesting, feel free to explore my other projects and connect with me.
+GitHub: https://github.com/Mehar-taj
+
+LinkedIn: https://www.linkedin.com/in/mehar-taj-a654102b6
+
+---
+
+⭐ If you found this project useful, consider giving it a star and exploring my other AI and Machine Learning projects.
